@@ -1,0 +1,11 @@
+
+Tjavascript:S1854l"3Remove this useless assignment to variable "$info".(ÒÃÓîûÿÿÿÿ
+Yjavascript:S1854m"8Remove this useless assignment to variable "$markerLat".(§Åı‚øÿÿÿÿ
+Wjavascript:S1481l"6Remove the declaration of the unused '$info' variable.(ÒÃÓîûÿÿÿÿ
+Mjavascript:S1854o"1Remove this useless assignment to variable "map".(ı ‚Å
+Vjavascript:S1854k"5Remove this useless assignment to variable "$marker".(Áïêåÿÿÿÿÿ
+Tjavascript:S1854n"8Remove this useless assignment to variable "$markerLon".(Öá€
+Yjavascript:S1481k"8Remove the declaration of the unused '$marker' variable.(Áïêåÿÿÿÿÿ
+Wjavascript:S1481n";Remove the declaration of the unused '$markerLon' variable.(Öá€
+\javascript:S1481m";Remove the declaration of the unused '$markerLat' variable.(§Åı‚øÿÿÿÿ
+Pjavascript:S1481o"4Remove the declaration of the unused 'map' variable.(ı ‚Å
