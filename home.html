@@ -1,0 +1,1033 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-6D2QE39D3K"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'G-6D2QE39D3K');
+	</script>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>Aviv Yaniv</title>
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/cv.css">
+</head>
+
+<style>
+#scrollToTop {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: green;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#scrollToTop:hover {
+  background-color: #555;
+}
+</style>
+
+<style>
+	@font-face {
+    font-family: myFirstFont;
+    src: url("./fonts/AbrilFatface-Regular.ttf") format('embedded-opentype'), /* Internet Explorer */
+	url("./fonts/AbrilFatface-Regular.ttf") format('woff2'), /* Super Modern Browsers */
+	url("./fonts/AbrilFatface-Regular.ttf") format('woff'), /* Pretty Modern Browsers */
+	url("./fonts/AbrilFatface-Regular.ttf") format('truetype'), /* Safari, Android, iOS */
+	url("./fonts/AbrilFatface-Regular.ttf") format('svg'); /* Legacy iOS */
+	}
+
+	.abril_fatface{
+		color: #00325c !important;
+		font-size: 50px;
+		font-family: myFirstFont;
+	}
+</style>
+
+<body>
+	<!-- Scroll to top button -->
+	<button onclick="topFunction()" id="scrollToTop" title="Go to top">Top</button>
+
+	<script>
+	//Get the button:
+	var scrollToTopButton = document.getElementById("scrollToTop");
+
+	// When the user scrolls down 20px from the top of the document, show the button
+	window.onscroll = function() {scrollFunction()};
+
+	function scrollFunction() {
+	  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+		scrollToTopButton.style.display = "block";
+	  } else {
+		scrollToTopButton.style.display = "none";
+	  }
+	}
+
+	// When the user clicks on the button, scroll to the top of the document
+	function topFunction() {
+	  document.body.scrollTop = 0; // For Safari
+	  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+	}
+
+	// Dates Calculations
+	function yearsDiff(d1, d2) {		
+		return Math.abs(d2.getFullYear() - d1.getFullYear());
+	}
+
+	function monthsDiff(d1, d2) {
+		var months;
+		months = (d2.getFullYear() - d1.getFullYear()) * 12;
+		months -= d1.getMonth();
+		months += d2.getMonth();
+		return months <= 0 ? 0 : months;
+	}
+	</script>
+
+	<!-- Dark Mode -->
+	<script src="js/darkmode-js.min.js"></script>
+	<script>
+	  function addDarkmodeWidget() {
+		const options = {
+		  bottom: '64px', // default: '32px'
+		  right: 'unset', // default: '32px'
+		  left: '32px', // default: 'unset'
+		  time: '0s', // default: '0.3s'
+		  mixColor: '#fff', // default: '#fff'
+		  backgroundColor: '#111515',  // default: '#fff'
+		  buttonColorDark: '#0e74ad',  // default: '#100f2c'
+		  // buttonColorLight: '#fff', // default: '#fff'
+		  saveInCookies: false, // default: true,
+		  label: '🌓', // default: ''
+		  autoMatchOsTheme: true // default: true
+		}
+
+		const darkmode = new Darkmode(options);
+		darkmode.showWidget();
+	  }
+	  window.addEventListener('load', addDarkmodeWidget);
+	</script>
+
+	<style type="text/css">
+		.darkmode--activated
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6 {
+			filter: invert(0);
+			color: #007bff;
+		}
+
+	</style>
+
+	<!--================ Start Header Area =================-->
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light">
+				<div class="container">
+					<!-- Brand and toggle get grouped for better mobile display -->
+					<!--
+					<a class="navbar-brand logo_h" href="index.html"><img src="img/logo.png" alt=""></a>
+					-->
+					<a class="abril_fatface" color="#00192e">Aviv Yaniv</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+					 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<ul class="nav navbar-nav menu_nav justify-content-end">
+							<li class="nav-item"><a class="nav-link" href="#about_me">About</a></li>
+							<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+							<li class="nav-item"><a class="nav-link" href="#recommendations">Recommendations</a></li>
+							<li class="nav-item"><a class="nav-link" href="#curriculum_vitae">CV</a></li>
+							<li class="nav-item"><a class="nav-link" href="#social">Social</a></li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+	<!--================ End Header Area =================-->
+
+	<!--================ Start Home Banner Area =================-->
+	<section class="home_banner_area" id="about_me">
+		<br>
+		<div class="banner_inner">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-6">
+						<div>
+							<br><br><br>
+							<h2>Hello, I am Aviv Yaniv</h2>
+							<h4 class="text-uppercase">Software Engineer 🖥️</h4>
+							<h4>Economist 📈 Beer Brewer 🍻 Photographer 📷 ~ “Curiosity is my drug”</h4>
+							<p>
+								<ul>
+									<li>Experienced software developer, elite army tech unit programmer veteran with vast projects resume </li>
+									<li>Skilled in the design and implementation of complex systems on various platforms </li>
+									<li>Passionate about coding, to improve and impact the lives of end clients </li>
+									<li>Strong programming skills in both high-level and low-level aspects </li>
+									<li>Double Major BSc in Computer Science and Economics from Tel-Aviv University </li>
+								</ul>
+							</p>
+							<div class="align-items-center">
+								<div class="footer_social">
+									<center>
+										<a target="_blank" href="https://www.linkedin.com/in/avivyaniv/"><img src="img/social/linkedin.png" height="70" ></img></a>
+										<a target="_blank" href="https://medium.com/@AvivYaniv"><img src="img/social/medium.png" height="70" ></a>
+										<a target="_blank" href="https://stackoverflow.com/users/14148864/aviv-yaniv?tab=profile"><img src="img/social/stackoverflow.png" height="70" ></a>
+										<a target="_blank" href="https://github.com/AvivYaniv"><img src="img/social/github.png" height="70" ></a>
+										<a target="_blank" href="https://projecteuler.net/profile/Aviv_Yaniv.png"><img src="img/social/project_euler.jpg" height="70" ></a>
+									</center>
+								</div>
+								<p>
+								<div class="footer_social">
+								<center>
+									<a class="primary_btn tr-bg" href="https://drive.google.com/u/0/uc?id=1eFfl2YqIAmHG5J_V50NA0GIJQeDjlU7f&export=download"><span>CV</span></a>
+									<a class="primary_btn tr-bg" href="mailto:avivyaniv@gmx.com"><span>Email</span></a>
+								</center>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<br><br><br>
+						<div>
+							<center>
+								<img width="70%" src="img/banner/home-right.png" alt="">
+							</center>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<br><br><br>
+	</section>
+	<!--================ End Home Banner Area =================-->
+
+	<!--================ Srart Brand Area =================-->
+	<!--================
+	<section class="brand_area section_gap_bottom">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-4">
+					<div class="row">
+						<div class="col-lg-6 col-md-6 col-sm-4">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo1.png" alt="">
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6 col-sm-4">
+							<div class="single-brand-item d-table">
+								<div class="d-table-cell text-center">
+									<img src="img/brands/logo2.png" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="offset-lg-2 col-lg-4 col-md-6">
+					<div class="client-info">
+						<div class="d-flex mb-50">
+							<span class="lage">10</span>
+							<span class="smll">Years Experience Working</span>
+						</div>
+						<div class="call-now d-flex">
+							<div>
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="ml-15">
+								<p>call now</p>
+								<h3>(+972)-52-39-09-209</h3>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	=================-->
+	<!--================ End Brand Area =================-->
+
+	<!--================ Start Features Area
+	<section class="features_area">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-lg-8 text-center">
+					<div class="main_title">
+						<h2>service offers </h2>
+						<p>
+							Text
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="row feature_inner">
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s1.png" alt="">
+						<h4>Software Development</h4>
+						<p>Text</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s2.png" alt="">
+						<h4>Software Design</h4>
+						<p>Text</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s3.png" alt="">
+						<h4>Service 3</h4>
+						<p>Text</p>
+					</div>
+				</div>
+				<div class="col-lg-3 col-md-6">
+					<div class="feature_item">
+						<img src="img/services/s4.png" alt="">
+						<h4>Service 4</h4>
+						<p>Text</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	End Features Area =================-->
+
+	<!--================Start Portfolio Area =================-->
+	<section class="portfolio_area" id="projects">
+		<br><br><br>
+		<div class="container" >
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="main_title text-left">
+						<h2>quality work <br>
+							Recently done project </h2>
+					</div>
+				</div>
+			</div>
+
+			<div class="filters-content">
+				<div class="row portfolio-grid justify-content-center">
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/cortex.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Cortex">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Cortex">Cortex</a></h4>
+								<p>Ultra flexibale and durable brain-comuter-interface large-scale project, which enabels to upload and view users telemetry data.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/bigdata.gif" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Big-Data-Uber-Forecast-In-New-York">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Big-Data-Uber-Forecast-In-New-York">Big Data; Uber Forecast In New York</a></h4>
+								<p>Forecasting future trends and demands for Uber in Manhattan, New-York</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all latest">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/firewall.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/FireWall">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/FireWall">Linux Kernel Firewall</a></h4>
+								<p>FireWall developed in C on Linux Kernel, capable of handling SSH, DLP module and self-developed protection from SSH LibAuth bypass AKA CVE-2018-10933.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all popular">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/projecteuler.jpg" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Project-Euler">
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Project-Euler">Project Euler</a></h4>
+								<p>Solved 100 problems, Level 4, Top 1.3 percentile </p>
+								<p>Project Euler is a series of challenging mathematical/computer programming problems that will require more than just mathematical insights to solve.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/nlp.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Natural-Language-Processing" >
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Natural-Language-Processing">Natural Language Processing</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/python_challenge.jpg" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Python-Challenge" >
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Python-Challenge">Python Challenge</a></h4>
+								<p>Reached: Level 33 and last </p>
+								<p>Python Challenge is a Notpron-like game in which each level can be solved by Python programming. </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/algorithms_and_applications_in_social_networks.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Algorithms-and-Applications-in-Social-Networks" >
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Algorithms-and-Applications-in-Social-Networks">Algorithms and Applications in Social Networks</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming following">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/abstract_interpretation_of_integers_by_signs.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Techniques-for-Improving-Software-Productivity" >
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Techniques-for-Improving-Software-Productivity">Techniques for Improving Software Productivity</a></h4>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 all upcoming">
+						<div class="portfolio_box">
+							<div class="single_portfolio">
+								<img class="img-fluid w-100" src="img/projects/sudoku.png" alt="">
+								<div class="overlay"></div>
+								<a target="_blank" href="https://github.com/AvivYaniv/Software-Project" >
+									<div class="icon">
+										<span class="lnr lnr-cross"></span>
+									</div>
+								</a>
+							</div>
+							<div class="short_info">
+								<h4><a target="_blank" href="https://github.com/AvivYaniv/Software-Project">Sudoko Solver</a></h4>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!--================End Portfolio Area =================-->
+
+	<!--================ Start Testimonial Area =================-->
+	<div class="testimonial_area section_gap_bottom" id="recommendations">
+		<br><br><br>
+		<div class="container">
+			<div class="main_title">
+				<h2>Recommendations</h2>
+			</div>
+			<div class="row">
+				<div class="testi_slider owl-carousel">
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/galit_wellner.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/galitwellner/">Prof. Galit Wellner</a></h4>
+									<p>I hired Aviv for the design and development of a support system for an experiment I ran with my students.
+										Aviv responded quickly and efficiently. He immediately understood my needs and answered them to the maximum level possible. The system was beautiful and ran smoothly.
+										The implementation phase was very complex with multiple installations in various sites on various platforms. Aviv assisted the students in the installations and made sure that the system operates properly.
+										Throughout the project Aviv was responsive, calm and very pleasant to work with, I highly recommend Aviv for developing a system from scratch and handling complex processes. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/reuven_plevinsky.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/reuven-plevinsky-79b20a87/">Reuven Plevinsky</a></h4>
+									<p>I have the pleasure to write this letter of recommendation for Aviv Yaniv.
+										I am lecturer at Computer Science faculty at Tel Aviv University.
+
+										Aviv had participated in Workshop in Information Security I give during his studies of Computer Science degree.
+										During last 5 years, I have taught dozens of students, Aviv is one of a few students which were not only interesting in getting a good grade, but also in the technical aspects of creativity and deep understanding.
+										At final assignment of the course, which included an analysis of real vulnerability and generic code leak detection he received maximus score.
+										Got a grade 100 which reflects knowledge, efforts, and intelligence belongs to the top of the curve.
+										He has astonishing abilities and always the first student to understand every lecture, and always wanted to know more.
+										I believe that any program that looks for young, talented student will enjoy Aviv high skills and motivation. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+        				<div class="row">
+        					<div >
+        						<img src="img/recommendations/nadav_dadon.jpg" height="150" width="150" alt="">
+        					</div>
+        					<div >
+        						<div class="testi_text">
+        							<h4><a target="_blank" href="https://www.linkedin.com/in/nadavdadon/">Nadav Dadon</a></h4>
+									<p>Aviv has worked as a programmer in a challenging big project under time restrictions. Aviv is a thorough researcher with excellent learning abilities and vast knowledge, in addition to great social skills with the team and co-workers. He has a kind, initiative and ambitious character. </p>
+        						</div>
+        					</div>
+        				</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/emanuel_fadlun.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/emanuelfadlun/">Emanuel Fadlun</a></h4>
+									<p>Aviv and I have been teammates for the past two and a half year.
+
+										He has great capabilities in both client and server side development in which he demonstrated profound knowledge and understandings in every aspect of development, from design to technologies.
+										Furthermore, he is also a very hard and passionate worker that loves to help if necessary. </p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/alex_dvorkin.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/alex-dvorkin-155a053/">Alex Dvorkin</a></h4>
+									<p>
+										Aviv is a very strong software engineer that shows great managerial
+										capabilities. We won the Microsoft Hackathon with more than 20 engineers
+										and data scientists, where he designed the whole pipeline architecture by consulting the relevant
+										stakeholders. When engineers weren't sure what direction to take, he eagerly helped
+										to make the right decision. Aviv has great personal skills, it's fun to work with him, he is always
+										here to help. He has a very quick grasp of complex concepts and comes up with solutions.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/yihezkel_schoenbrun.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/yihezkel-schoenbrun-cissp-8924904/">Yihezkel (Ne Jason) Schoenbrun</a></h4>
+									<p>
+										Aviv is a rare gem who's a master of technical domains, a great, fun and interesting friend, and who's always trying to learn more and improve.
+										Aviv is our guru for many things, including some complex domains like autoscaling. His implementations make the complex seem simple, thanks to intelligent design, implementation and metrics reporting.
+										Everyone enjoys working with Aviv, because he's just fun to be around. He's smart, but humble. He has good ideas, but listens to others. He works hard, but also makes the time to hang out.
+										It's notable how much he knows and continues to push himself, including in domains that would at least for me be well outside my comfort zone.
+										I'm very fortunate to work with Aviv. I enjoy my job more in part because I get to work with him!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/sagiv_frankel.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/sagivf/">Sagiv Frankel</a></h4>
+									<p>
+										Aviv is hard-working and dedicated, both as a developer and as a friend. He takes his duties and responsibilities seriously and walks the extra mile to resolve issues and meet customer needs.
+
+										Super intelligent and super knowledgeable individual. He took on a complex service that algorithmically predicts and optimizes customers' needs. With many moving parts and edge cases, he played a leading and critical role in taking the service to production.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/lilach_shalev_mevorach.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/lilach-shalev-mevorach-02597823/">Lilach Shalev-Mevorach</a></h4>
+									<p>
+										Aviv is a bright software engineer who combines analytic approach and skills with open minded and creative problem-solving abilities. In my lab he developed a new software aimed at analyzing and summarizing personal attention profiles, providing a user-friendly tool that suggests how to interpret the results.
+										Aviv started with a thorough investigation of the users’ needs. Then, he learned the process that was used in the lab before, identified different frequent and infrequent problems and then planned very carefully a solution that upgraded and streamlined the complex process.
+										Importantly, he produced various solutions, addressing needs of different groups of users. Finally and crucially, he prepared clear documentation and a manual explaining how to work with the new tool. 
+										On top of his outstanding professional ‘tool kit’, Aviv is highly motivated, humble, always willing to help and share his wisdom with others and strives to deepen his knowledge and abilities - a true asset!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/iris_kaminer.jpg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/iriskaminer/">Iris Kaminer</a></h4>
+									<p>
+										Aviv is also a highly motivated and results-oriented individual. He is always willing to go the extra mile to get the job done.
+										Aviv is a very talented and meticulous engineer. He leads the auto scale development in Azure Data Explorer (ADX). The auto scale algorithm has been highly effective in optimizing the cost/performance of the ADX service.
+										Aviv is a great communicator and team player. He is always happy to join Customer meetings to understand their issues and then provide a quick resolution to their problems. 
+										It is a real pleasure working with Aviv!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="testi_item">
+						<div class="row">
+							<div >
+								<img src="img/recommendations/ofir_sharon.jpeg" height="150" width="150" alt="">
+							</div>
+							<div >
+								<div class="testi_text">
+									<h4><a target="_blank" href="https://www.linkedin.com/in/ofir-sharon/">Ofir Sharon</a></h4>
+									<p>
+										Aviv is a kind of professional that I have the pleasure of writing a recommendation for!
+										Aviv and I are teammates for over a year and a half in one of the dev teams in the Azure Data Explorer ("Kusto") group at Microsoft.
+
+										I am inspired by Aviv's passion for code and strive for excellence. His keen eye for details is only one of the derivatives of that.
+										In the time I've known him, Aviv has managed to take ownership of the Autoscale feature in ADX. This is a major feature we expose to customers in order to achieve optimized performance and cost of Kusto clusters in a self-managed way.
+										Aviv is highly customer-oriented. His high standards professionally result in both quick and insightful mitigations of incidents, and positive relationship with customers within and outside Microsoft.
+
+										Furthermore, Aviv is a great friend. His vibes around the office are ALWAYS positive, and he genuinely cares.
+
+										I frankly believe Aviv is a great contributor for any organization and I highly recommend him without hesitation.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			</div>
+		</div>
+		</div>
+		<center>
+			<h3><a target="_blank" href="https://drive.google.com/drive/folders/1pBLq33F63h9uKr24aisLWSwl5uyV-UWz?usp=sharing">More Recommendations</a></h3>
+		</center>		
+	</div>
+	
+	<!--================ End Testimonial Area =================-->
+
+	<!--============= Start Curriculum Vitae Area =============-->
+	<section class="section" id="curriculum_vitae">
+		<br><br><br><br>
+		<div class="main_title">
+				<h2> Curriculum Vitae </h2>
+		</div>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b><a target="_blank" href="https://en.wikipedia.org/wiki/Big_Tech">GAMFA</a></b></h3>
+						<h6 class="font-lite-black"><b>Microsoft</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>Senior Software Development Engineer</b></h4>
+							<h6 class="font-lite-black"><b>Microsoft</b></h6>
+							<h6 class="font-lite-black margin-t-10">September 2023 - Present (<script>document.write(yearsDiff(new Date('2023-09-01'), new Date()))</script> Years, <script>document.write(monthsDiff(new Date('2021-06-14'), new Date()) % 12)</script> Months)</h6>
+							<p class="margin-tb-30">
+								● TechLeading AutoScale across all Kusto Services, responsibility includes; <br>
+								1. Leadership: working with team members of different teams to create new AutoScale solutions, from the research phase, through development and deployment and monitoring <br>
+								2. Guidance and Mentoring: working with team members across other teams who develop AutoScale for their services, by guidance and approval <br>
+								3. Research and Development: keep improving and perfecting existing AutoScale solutions by actively measuring and gathering metrics and client feedback <br>
+								● Working with OpenAI model, using Semantic Kernel, and PoC ideas with Chat and Embedding models and integration to service <br>
+								● Mentoring and buddying: developing tool together with two students from Tel-Aviv University, to evaluate AI algorithms accuracy <br>
+								● Detection, leading investigations, and providing solutions to bugs and incidents in the team's service <br>
+							</p>
+						</div><!-- GAMFA -->
+
+						<div class="education margin-b-50">
+							<h4><b>Software Development Engineer II</b></h4>
+							<h6 class="font-lite-black"><b>Microsoft</b></h6>
+							<h6 class="font-lite-black margin-t-10">Juny 2021 - September 2023</script> Years, <script>document.write(monthsDiff(new Date('2021-06-14'), new Date()) % 12)</script> Months)</h6>
+							<p class="margin-tb-30">
+								● TechLeading AutoScale of Kusto Services, by leading, mentoring & developing responsibility includes;  <br>
+								1. Technical Excellence: Improving AutoScale logic and addressing testability gaps, detecting and investigating elusive bugs and solving them, implementation of data science aspects  <br>
+								2. Livesite: Identifying, troubleshooting and mitigating AutoScale related incidents, monitoring, quality verification <br>
+								3. Data Driven: Emitting telemetry to support building a dashboards, measure customers adoption <br>
+								4. Collaboration: Working with PMs, DataScientists and Engineers from other teams to provide a holistic solution and ensure customers best scaling experience <br>
+								5. Growth Mindset: Trying new approaches, measuring impact and improve. <br>
+								● Taking <a target="_blank" href="https://techcommunity.microsoft.com/t5/azure-data-explorer-blog/optimized-autoscale-predictive-planning/ba-p/3413543">Kusto Predictive AutoScale</a> from Private Preview to General Announcement (being globally available to all customers with Optimized AutoScale); <br>
+								development, detection and investigation of elusive bugs and solving them, implementation of data science aspects, monitoring, and quality verification <br>
+								● Allowing E2E deployment of Kusto <br>
+								● <a target="_blank" href="https://techcommunity.microsoft.com/t5/azure-data-explorer-blog/end-to-end-azure-data-explorer-pipeline-deployment-with-arm/ba-p/3248717">Integrating and cooperating with HashiCorps to allow deployment with Terraform</a> <br>
+								● Detection, management and providing solutions to bugs and incidents in the team's service <br>
+								● Hardening and monitoring the service interface: by protecting against attacks and throttling <br>
+								● Mentoring and training new team members and ops (before completing first year) <br>
+								● <a target="_blank" href="https://github.com/Aviv-Yaniv/">Side projects</a>:  <br>
+								&emsp;◈ [Internal] Quick Investigation Tool : Allows focused investigation, alerting on regressions and providing with vital information to quick detect which direction to take <br>
+								&emsp;◈ <a target="_blank" href="https://github.com/Aviv-Yaniv/Tool_For_Comparing_KQL_Queries">[Public] Tool for Comparing KQL Queries: Saves time and tedious manual work for validations during refactoring of a KQL query and checks that the new version is compatible <br>
+								&emsp;◈ <a target="_blank" href="https://github.com/Aviv-Yaniv/AnomalyDetectionInKQL">[Public] Tool for Anomaly Detection in KQL</a>: Covering both missing rows gaps and invalid values anomalies <br>
+								&emsp;◈ <a target="_blank" href="https://github.com/Aviv-Yaniv/ArmTemplateDependenciesGraphValidator">[Public] ARM Template Dependencies Graph Validator</a>: Converts an ARM Template dependencies to a directed Graph and validates it <br>
+								<br>
+								Additional: <br>								
+								● Architect of 1st Place Winnng Team, Ecosystem Category @ Microsoft 2022 Hackathon <br>
+								We've been working with a group of analysts whose role is to find similar patients as needed by the physicians (this may be for different use cases: similar diagnosis, similar symptoms, etc). <br>
+								As the architect I've broke done the requirements into working pipeline design and cooperated with the team members (engineers, data scientists, ops and analysts) till the successful demonstration of the project, while managing the backend team and tackling the challenges that rised. <br>
+								Before our project, the analysts team was doing this work manually by using a general search for words in the free text and other manual search methods. The goal of the project is to create an AI application for this group that will use Azure Text Analytics for Health along with an ML algorithm to create an output of similar patients for an input of one single patient ID. <br>
+								<br>
+							</p>
+						</div><!-- GAMFA -->
+		
+					</div><!-- GAMFA-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Freelance</b></h3>
+						<h6 class="font-lite-black"><b>During Degree at Tel-Aviv University</b></h6>
+					</div>
+				</div><!-- col-sm-4 -->
+
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>In Charge of Development Engineering at the Attention Lab for Children</b></h4>
+							<h6 class="font-lite-black"><b>Sagol School of Neuroscience, Tel Aviv University</b></h6>
+							<h6 class="font-lite-black margin-t-10">Mar 2019 – Mar 2020 (1 Year, 1 Month)</h6>
+							<p class="margin-tb-30">
+								● In Charge of Development Engineering in all aspects of the Attention Lab for Children at Sagol School of Neuroscience, Tel Aviv University <br>
+								● Developing new software that analyzes examinees' results and offers insights <br>
+								● Designing the software required a deep understanding of a whole new professional domain, as well as communicating and formalizing my clients' needs <br>
+								● Adjustment and maintenance of all existing laboratory softwares, which requires out of the box solutions to keep up with the changing requirements <br>
+							</p>
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>Software Development Engineer at Research of Attention in Elderly People</b></h4>
+							<h6 class="font-lite-black"><b>Tel-Aviv University</b></h6>
+							<h6 class="font-lite-black margin-t-10">Oct 2018 - Dec 2018 (3 Months)</h6>
+							<p class="margin-tb-30">
+								● Programming the software from scratch, that required a deep understanding of customer needs and tailoring the technological solution <br>
+								● Developing the software involved thorough inspection and analysis of the games to obtain measurements in real-time while they are being played <br>
+								● Program developed in C# and python <br>
+							</p>
+						</div><!-- education -->
+
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Academic Education</b></h3>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>Bachelor of Science (BSc) Computer Sceince & Economics</b></h4>
+							<h6 class="font-lite-black"><b>Tel-Aviv University</b></h6>
+							<h6 class="font-lite-black margin-t-10">2016-2020</h6>
+							<p class="margin-tb-30">
+								● GPA of 85 (in both majors) <br>
+								● Managing a team of student scholarships, Together we created and organized lectures about practical knowledge in bars <br>
+								● Freshman Mentor, of up to 20 students prior to their freshmen year and throughout their first semester <br>
+								● Activities and Societies: International Week IWCO, Friedberg Economics Institute Member <br>
+							</p>
+						</div><!-- education -->
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Military Service</b></h3>
+						<h6 class="font-lite-black"><b>IDF</b></h6>
+						<h6 class="font-lite-black margin-t-10">4 Years, 4 Months</h6>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+
+						<div class="education margin-b-50">
+							<h4><b>Senior Full-Stack Developer</b></h4>
+							<h6 class="font-lite-black margin-t-10">Feb 2014 – Jun 2015 (1 Year, 5 Months)</h6>
+							<p class="margin-tb-30">
+								● Full-stack development of management project built from scratch <br>
+								● Research and integration of many technologies including, and not restricted to: WASP, POI, Web Services, Gson, Logging <br>
+								● Creating team training in Moodle template <br>
+								 <br>
+								Additional: <br>
+								● Team manager in "CTO Lead" Hackathon (IDF and Google cooperation hackathon that took place at Google Campus in Tel Aviv). <br>
+								Prototyped a carpooling app for soldiers, back at the time carpooling hasn't been as popular as today. <br>
+								 <br>
+								Technologies: <br>
+								● Server-side consisting of Play Framework and Java, and utilizes Spring and Hibernate <br>
+								● Asynchronous frameworks over AKKA <br>
+								● Development with Spring and Data-Base access through Hibernate Criteria to an Oracle DB <br>
+								● Client-Side consisting of AngularJS, designed with Bootstrap and CSS on HTML5 <br>
+								● Revision control with Git <br>
+							</p>
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>Enterprise Software Developer</b></h4>
+							<h6 class="font-lite-black margin-t-10">Feb 2013 – Feb 2014 (1 Year, 1 Month)</h6>
+							<p class="margin-tb-30">
+								● Adding features and new capabilities to an enterprise project <br>
+								● Developing and leading the team training program <br>
+								<br>
+								Additional: <br>
+								● Team manager of 1st place winning team in the unit's robotics competition. <br>
+								Built a robot using Arduino and Samsung S3, connected with a serial interface and operating both manually and automatically, to recognize balloons with OpenCV. <br>
+								<br>
+								Technologies: <br>
+								● Server-side consisting of Java code and SQL and reports using Oracle Reports <br>
+								● User interface with Oracle Forms <br>
+								● Working with Ant and Unix <br>
+								● Oracle DB <br>
+							</p>
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>Embedded Software Developer</b></h4>
+							<h6 class="font-lite-black margin-t-10">Mar 2011 – Feb 2013 (2 Years)</h6>
+							<p class="margin-tb-30">
+							● Developing Embedded projects of high stability and reliability <br>
+							● Programming in high-security standards <br>
+							● In charge of the team training <br>
+							<br>
+							Technologies: <br>
+							● Programming in C++ and C <br>
+							● Real-Time operation systems: VxWorks and ThreadX <br>
+							● Revision control with SVN <br>
+							</p>
+						</div>
+
+						<div class="education margin-b-50">
+							<h4><b>Software Development Course "Mamram"</b></h4>
+							<h5 class="font-yellow"><b>IDF C4I & Cyber Security Directorate Internship</b></h5>
+							<h6 class="font-lite-black margin-t-10">Sep 2010 – Mar 2011 (7 Months)</h6>
+						</div>
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-4">
+					<div class="heading">
+						<h3><b>Education</b></h3>
+					</div>
+				</div><!-- col-sm-4 -->
+				<div class="col-sm-8">
+					<div class="education-wrapper">
+						<div class="education margin-b-50">
+							<h4><b>Weizmann Institute of Science</b></h4>
+							<h5><b>Excellence program for software engineering students in Weizmann institute (During High School)</b></h5>
+							<h6 class="font-lite-black margin-t-10">2009-2010</h6>
+							<p class="margin-tb-30">
+								The program included two-years after school activities: <br>
+								First-year: <br>
+								✯ Lectures from professionals about diverse topics of computer science <br>
+								Second-year (for excellent students): <br>
+								✯ Developing software for encryption and steganography of data in pictures. <br>
+							</p>
+						</div><!-- education -->
+
+						<div class="education margin-b-50">
+							<h4><b>Ahad Ha'am</b></h4>
+							<h5><b>Software Engineering & Physics</b></h5>
+							<h6 class="font-lite-black margin-t-10">2006-2010</h6>
+							<p class="margin-tb-30">
+								● Scholarship for Excellence in Studies (given to a single student in the cohort) <br>
+								● Bagrut average of 113 <br>
+								● Excelled in software engineering (10 degrees, final grade 99.5), physics (5 degrees, final grade 99), math (5 degrees, final grade 95) and English (5 degrees, final grade 95) <br>
+							</p>
+						</div><!-- education -->
+
+					</div><!-- education-wrapper -->
+				</div><!-- col-sm-8 -->
+			</div><!-- row -->
+		</div><!-- container -->
+
+	</section><!-- about-section -->
+	<!--============= End Curriculum Vitae Area ===============-->
+
+	<!--================ Start Newsletter Area
+	<section class="newsletter_area">
+		<div class="container">
+			<div class="row justify-content-center align-items-center">
+				<div class="col-lg-12">
+					<div class="subscription_box text-center">
+						<h2 class="text-uppercase text-white">get update from anywhere</h2>
+						<p class="text-white">
+							Bearing Void gathering light light his eavening unto dont afraid. 
+						</p>
+						<div class="subcribe-form" id="mc_embed_signup">
+							<form target="_blank" novalidate="true" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscription relative">
+								<input name="EMAIL" placeholder="Email address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email address'" required="" type="email">
+								<div style="position: absolute; left: -5000px;">
+									<input name="b_36c4fd991d266f23781ded980_aefe40901a" tabindex="-1" value="" type="text">
+								</div>
+								<button class="primary-btn hover d-inline">Get Started</button>
+								<div class="info"></div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	End Newsletter Area =================-->
+
+<!--================Footer Area =================-->
+	<footer class="footer_area" id="social">
+			<div class="row footer_bottom justify-content-center">
+				<div class="row justify-content-center align-items-center">
+					<div class="col-lg-12">
+						<!--
+						<img src="img/logo.png" alt="">
+						-->
+						<a class="abril_fatface" color="#00192e">Aviv Yaniv</a>
+					</div>
+					<div class="footer_social">
+						<a target="_blank" href="https://www.linkedin.com/in/avivyaniv/"><img src="img/social/linkedin.png" height="70" ></img></a>
+						<a target="_blank" href="https://medium.com/@AvivYaniv"><img src="img/social/medium.png" height="70" ></a>
+						<a target="_blank" href="https://stackoverflow.com/users/14148864/aviv-yaniv?tab=profile"><img src="img/social/stackoverflow.png" height="70" ></a>
+						<a target="_blank" href="https://github.com/AvivYaniv"><img src="img/social/github.png" height="70" ></a>
+						<a target="_blank" href="https://projecteuler.net/profile/Aviv_Yaniv.png"><img src="img/social/project_euler.jpg" height="70" ></a>
+					</div>
+				</div>
+			</div>
+			<div class="row footer_bottom justify-content-center">
+				<div class="row justify-content-center align-items-center">
+					<p>Copyright &copy; 2020-<script>document.write(new Date().getFullYear())</script> Aviv Yaniv All Rights Reserved</p>
+				</div>
+			</div>
+	</footer>
+
+	<!-- Visitors Flags Widget -->
+	<script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5a8qasv7lca&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
+	<!-- -->
+
+	<!--================End Footer Area =================-->
+
+	<!-- Optional JavaScript -->
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="js/jquery-3.2.1.min.js"></script>
+	<script src="js/popper.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/stellar.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/imagesloaded.pkgd.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/mail-script.js"></script>
+	<!--gmaps Js-->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjCGmQ0Uq4exrzdcL6rvxywDDOvfAu6eE"></script>
+	<script src="js/gmaps.min.js"></script>
+	<script src="js/theme.js"></script>
+</body>
+
+</html>
