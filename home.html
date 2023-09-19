@@ -103,7 +103,7 @@
 		months = (d2.getFullYear() - d1.getFullYear()) * 12;
 		months -= d1.getMonth();
 		months += d2.getMonth();
-		return months <= 0 ? 0 : months;
+		return months <= 0 ? 0 : (months - 1);
 	}
 	</script>
 
@@ -548,7 +548,7 @@
 						<div class="education margin-b-50">
 							<h4><b>Senior Software Development Engineer</b></h4>
 							<h6 class="font-lite-black"><b>Microsoft</b></h6>
-							<h6 class="font-lite-black margin-t-10">September 2023 - Present (<script>document.write(yearsDiff(new Date('2023-09-01'), new Date()))</script> Years, <script>document.write(monthsDiff(new Date('2021-06-14'), new Date()) % 12)</script> Months)</h6>
+							<h6 class="font-lite-black margin-t-10">September 2023 - Present (<script>document.write(yearsDiff(new Date('2023-09-01'), new Date()))</script> Years, <script>document.write(monthsDiff(new Date('2023-09-01'), new Date()) % 12)</script> Months)</h6>
 							<p class="margin-tb-30">
 								● TechLeading AutoScale across all Kusto Services, responsibility includes; <br>
 								1. Leadership: working with team members of different teams to create new AutoScale solutions, from the research phase, through development and deployment and monitoring <br>
